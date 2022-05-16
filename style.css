@@ -1,5 +1,6 @@
 body {
   margin:0;
+  font-size: large;
 }
 a {
   text-decoration: none;
@@ -10,16 +11,18 @@ h1 {
   text-align:center;
   padding: 20px;
   margin:0;
+  font-size: 60px;
 }
 #list {
   border-right:1px solid black;
-  width:100px;
+  width:160px;
   margin:0;
-  padding:20px 0px 20px 40px;;
+  padding:20px 0px 20px 50px;;
+  font-size: xx-large;
 }
 #grid {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 220px 1fr;
 }
 #grid ul {
   padding-left:25px;
@@ -30,3 +33,18 @@ h1 {
 .date {
   padding-left: 220px;
 }
+#like {
+  display: none;
+}
+#melony {
+  padding: 10px;
+  border-radius: 10px red;
+}
+#goal {
+  padding: 16px;
+}
+/* .like {
+  display: inline;
+  inline-size: 300px;
+}
+*/
