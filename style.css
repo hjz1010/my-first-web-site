@@ -1,6 +1,8 @@
 body {
   margin:0;
   font-size: large;
+/*  background-color: #FFAAFF;*/
+  background-image: url('back.jpeg');
 }
 a {
   text-decoration: none;
@@ -17,7 +19,7 @@ h1 {
   border-right:1px solid black;
   width:160px;
   margin:0;
-  padding:20px 0px 20px 50px;;
+  padding:20px 0px 20px 50px;
   font-size: xx-large;
 }
 #grid {
@@ -27,18 +29,16 @@ h1 {
 #grid ul {
   padding-left:25px;
 }
-#img {
-  margin: 30px;
-}
 .date {
   padding-left: 220px;
 }
 #like {
-  display: none;
+  padding-top: 10px;
 }
 #melony {
   padding: 10px;
   border-radius: 10px red;
+  border-radius: 0;
 }
 #goal {
   padding: 16px;
@@ -48,3 +48,20 @@ h1 {
   inline-size: 300px;
 }
 */
+#like img {
+  border-radius: 50%;
+}
+img {
+  border-radius: 40%;
+}
+#contact {
+  padding: 10px;
+}
+@media(max-width:730px){
+  #grid {
+    display: block;}
+  #list {
+    border-right:none;
+    border-bottom:1px dotted gray;
+    padding:20px 730px 20px 50px; }
+}
