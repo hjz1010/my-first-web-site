@@ -2,11 +2,14 @@ body {
   margin:0;
   font-size: large;
 /*  background-color: #FFAAFF;*/
-  background-image: url('back.jpeg');
+  background-image: url('image/back.jpeg');
 }
 a {
   text-decoration: none;
   color:black;
+}
+a:hover {
+  opacity: 0.5;
 }
 h1 {
   border-bottom:1px solid black;
@@ -18,6 +21,7 @@ h1 {
 #list {
   border-right:1px solid black;
   width:160px;
+  height: 1600px;
   margin:0;
   padding:20px 0px 20px 50px;
   font-size: xx-large;
@@ -26,22 +30,22 @@ h1 {
   display: grid;
   grid-template-columns: 220px 1fr;
 }
-#grid ul {
+ul {
   padding-left:25px;
 }
-.date {
-  padding-left: 220px;
+/*.date {
+  padding-left: 220px;*/
 }
-#like {
-  padding-top: 10px;
-}
+
 #melony {
-  padding: 10px;
-  border-radius: 10px red;
-  border-radius: 0;
+  padding: 20px 10px;
+  /*border-radius: 10px red;
+  border-radius: 10%;*/
 }
-#goal {
+#goal, #index, #about {
   padding: 16px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
 }
 /* .like {
   display: inline;
@@ -54,14 +58,27 @@ h1 {
 img {
   border-radius: 40%;
 }
-#contact {
-  padding: 10px;
+#contact, #like {
+  padding: 20px 10px;
 }
 @media(max-width:730px){
   #grid {
     display: block;}
   #list {
+    width:1000px;
+    height: 150px;
     border-right:none;
     border-bottom:1px dotted gray;
     padding:20px 730px 20px 50px; }
+  #goal {
+      display: block;
+    }
+}
+@media(min-width:730px) and (max-width:1020px){
+  #index, #about, #goal{
+    display: block;
+  }
+}
+#about {
+  line-height: 150%;
 }
