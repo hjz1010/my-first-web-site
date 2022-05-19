@@ -1,0 +1,24 @@
+ul {
+  padding-left:25px;
+}
+#about {
+  line-height: 150%;
+  white-space: nowrap;
+}
+#deer:hover {
+  width: 100px;
+}
+
+.baby {
+  position: relative;
+}
+.baby2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.baby:hover .baby2 {
+  opacity: 1;
+}

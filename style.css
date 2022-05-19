@@ -1,7 +1,12 @@
+@import "CSS/index.css";
+@import "CSS/about.css";
+@import "CSS/like.css";
+@import "CSS/goal.css";
+@import "CSS/contact.css";
+
 body {
   margin:0;
   font-size: large;
-/*  background-color: #FFAAFF;*/
   background-image: url('image/back.jpeg');
 }
 a {
@@ -21,7 +26,7 @@ h1 {
 #list {
   border-right:1px solid black;
   width:160px;
-  height: 1600px;
+  height: 100%;
   margin:0;
   padding:20px 0px 20px 50px;
   font-size: xx-large;
@@ -30,55 +35,44 @@ h1 {
   display: grid;
   grid-template-columns: 220px 1fr;
 }
-ul {
-  padding-left:25px;
-}
-/*.date {
-  padding-left: 220px;*/
+img {
+  border-radius: 40%;
 }
 
-#melony {
-  padding: 20px 10px;
-  /*border-radius: 10px red;
-  border-radius: 10%;*/
-}
-#goal, #index, #about {
+#index, #about, #goal {
   padding: 16px;
   display: grid;
   grid-template-columns: 340px 1fr;
 }
-/* .like {
-  display: inline;
-  inline-size: 300px;
-}
-*/
-#like img {
-  border-radius: 50%;
-}
-img {
-  border-radius: 40%;
-}
-#contact, #like {
+#like, #contact {
   padding: 20px 10px;
 }
+
 @media(max-width:730px){
   #grid {
     display: block;}
   #list {
-    width:1000px;
+    /* width:730px; */
+    width: auto;
     height: 150px;
     border-right:none;
     border-bottom:1px dotted gray;
-    padding:20px 730px 20px 50px; }
-  #goal {
-      display: block;
-    }
+    padding:20px 0px 20px 50px; }
+  #index, #about, #contact, #goal{
+    display: block;
+  }
+  .top {
+    display: none;
+  }
+  #like img {
+    width: 150px;
+  }
 }
 @media(min-width:730px) and (max-width:1020px){
   #index, #about, #goal{
     display: block;
   }
-}
-#about {
-  line-height: 150%;
+  .top {
+    display: none;
+  }
 }
