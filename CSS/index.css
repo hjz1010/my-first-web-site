@@ -2,3 +2,6 @@
   line-height: 300%;
   white-space: nowrap;
 }
+#index img {
+  border-radius: 40%;
+}

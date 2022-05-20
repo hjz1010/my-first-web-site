@@ -1,3 +1,6 @@
 #goal {
   white-space: nowrap;
 }
+#goal img {
+  border-radius: 40%;
+}

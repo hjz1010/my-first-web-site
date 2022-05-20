@@ -1,3 +1,6 @@
 #contact {
   white-space: nowrap;
 }
+#contact img {
+  border-radius: 50%;
+}

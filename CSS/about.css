@@ -5,6 +5,10 @@ ul {
   line-height: 150%;
   white-space: nowrap;
 }
+#about img {
+  border-radius: 40%;
+}
+
 #deer:hover {
   width: 100px;
 }
