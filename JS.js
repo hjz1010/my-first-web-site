@@ -11,4 +11,4 @@ function typing() {
   }
 }
 
-setInterval (typing, 200);
+setInterval (typing, 100);
