@@ -1,6 +1,28 @@
 #contact {
   white-space: nowrap;
+  display: grid;
+  grid-template-rows: 100px*4
 }
 #contact img {
   border-radius: 50%;
+  position: relative;
+  top: 10px;
+}
+
+/* hover > 애니메이션 효과 */
+#contact img:hover {
+  animation-name: contactImage;
+  animation-duration: 500ms;
+  animation-duration: leaner;
+  animation-fill-mode: forwards; /* 애니메이션이 시작되기 전이나 끝나고 난 후 어떤 값이 적용될지 지정 */
+  animation-iteration-count: 6;
+  animation-direction: alternate;   /* 순방향과 역방향 번갈아 방향을 바꿔 가며 애니메이션을 재생 */
+}
+@keyframes contactImage {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
 }

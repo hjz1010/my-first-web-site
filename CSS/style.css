@@ -15,7 +15,11 @@ a {
   text-decoration: none;
   color:black;
 }
-a:hover {
+
+h1 a:hover {
+ opacity: 0.5;
+}
+ol a:hover {
   opacity: 0.5;
 }
 h1 {
@@ -60,11 +64,14 @@ h1 {
     width: 150px;
   }
 }
-@media (max-width:1020px){
-  #index, #about, #goal, #contact{
+@media(max-width:1020px) and (min-width:730px){
+  #index, #about, #goal {
     display: block;
   }
   .top {
     display: none;
+  }
+  #like img {
+    width: 200px;
   }
 }
