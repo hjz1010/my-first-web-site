@@ -1,7 +1,10 @@
 #contact {
   white-space: nowrap;
+  padding: 20px 16px;
   display: grid;
-  grid-template-rows: 100px*4
+  grid-template-columns: 180px 180px 280px 220px;
+  /* grid-template-rows: 100px*4 */
+
 }
 #contact img {
   border-radius: 50%;
@@ -10,7 +13,7 @@
 }
 
 /* hover > 애니메이션 효과 */
-#contact img:hover {
+#contact a:hover img{
   animation-name: contactImage;
   animation-duration: 500ms;
   animation-duration: leaner;
@@ -24,5 +27,18 @@
   }
   100% {
     top: 0px;
+  }
+}
+/* 화면 너비에 따라 미디어쿼리 적용 */
+@media(max-width:1020px) and (min-width:530px){
+  #contact {
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 100px 100px;
+  }
+}
+@media(max-width:530px){
+  #contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
   }
 }

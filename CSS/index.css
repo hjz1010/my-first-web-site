@@ -1,7 +1,19 @@
 #index {
   line-height: 300%;
   white-space: nowrap;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
 }
 #index img {
   border-radius: 40%;
+}
+
+@media(max-width:1020px) {
+  #index {
+      display: block;
+    }
+    .top {
+      display: none;
+    }
 }

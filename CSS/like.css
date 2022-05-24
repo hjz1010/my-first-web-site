@@ -4,4 +4,16 @@
 
 #like {
   white-space: nowrap;
+  padding: 20px 16px;
+}
+
+@media(max-width:1020px) and (min-width:730px){
+  #like img {
+    width: 200px;
+  }
+}
+@media(max-width:730px){
+  #like img {
+    width: 150px;
+  }
 }

@@ -4,7 +4,11 @@ ul {
 #about {
   line-height: 150%;
   white-space: nowrap;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
 }
+
 #about img {
   border-radius: 40%;
 }
@@ -25,4 +29,13 @@ ul {
 }
 .baby:hover .baby2 {
   opacity: 1;
+}
+
+@media (max-width:1020px) {
+   #about {
+      display: block;
+    }
+    .top {
+      display: none;
+    }
 }
