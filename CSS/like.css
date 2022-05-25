@@ -5,7 +5,8 @@
 #like {
   white-space: nowrap;
   padding: 20px 16px;
-  margin-top: 20px; 
+  margin-top: 20px;
+
 }
 
 @media(max-width:1020px) and (min-width:730px){
@@ -23,13 +24,12 @@
 .slideshow-container {
   height: 500px;
   position: relative;
-  margin: auto;
   overflow: hidden;
 }
 .mySlides{
   position: relative;
   animation-name: likeImage;
-  animation-duration: 12s;
+  animation-duration: 13s;
   animation-duration: leaner;
   animation-fill-mode: forwards; /* 애니메이션이 시작되기 전이나 끝나고 난 후 어떤 값이 적용될지 지정 */
   animation-iteration-count: infinite;
@@ -40,6 +40,6 @@
     top: 100px;
   }
   100% {
-    top: -950px;
+    top: -1050px;
   }
 }
