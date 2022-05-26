@@ -15,13 +15,11 @@ a {
   text-decoration: none;
   color:black;
 }
-h1 a:hover {
+/* 메인페이지 및 목록 링크 마우스오버 효과 */
+h1,ol a:hover {
  opacity: 0.5;
 }
-ol a:hover {
-  opacity: 0.5;
-}
-
+/* 페이지 상단 가로 구분선 */
 h1 {
   border-bottom:1px solid black;
   text-align:center;
@@ -29,6 +27,7 @@ h1 {
   margin:0;
   font-size: 60px;
 }
+/* 페이지 왼쪽 목록 구분선 및 그리드 나누기 */
 #list {
   border-right:1px solid black;
   width:160px;
@@ -41,7 +40,7 @@ h1 {
   display: grid;
   grid-template-columns: 220px 1fr;
 }
-
+/* 웹페이지 너비가 좁아지면 목록을 위쪽으로 배치하는 미디어쿼리 */
 @media(max-width:730px){
   #grid {
     display: block;}

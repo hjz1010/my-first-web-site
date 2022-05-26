@@ -1,14 +1,12 @@
 #like img {
   border-radius: 50%;
 }
-
 #like {
   white-space: nowrap;
   padding: 20px 16px;
   margin-top: 20px;
-
 }
-
+/* 웹페이지 너비에 따라 사진 크기 조절 */
 @media(max-width:1020px) and (min-width:730px){
   #like img {
     width: 200px;
@@ -19,7 +17,6 @@
     width: 150px;
   }
 }
-
 /* CSS로 슬라이드쇼 효과 도전*/
 .slideshow-container {
   height: 500px;

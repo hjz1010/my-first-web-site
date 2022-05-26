@@ -8,15 +8,13 @@ ul {
   display: grid;
   grid-template-columns: 340px 1fr;
 }
-
 #about img {
   border-radius: 40%;
 }
-
 #deer:hover {
   width: 100px;
 }
-
+/* 가족사진에 마우스오버 시 확대사진으로 서서히 변경되도록 */
 .baby {
   position: relative;
 }
@@ -30,7 +28,7 @@ ul {
 .baby:hover .baby2 {
   opacity: 1;
 }
-
+/* 웹페이지 폭이 좁아지면 사진 아래로 글이 배치되도록 */
 @media (max-width:1020px) {
    #about {
       display: block;

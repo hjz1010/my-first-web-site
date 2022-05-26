@@ -7,7 +7,7 @@
 #goal img {
   border-radius: 40%;
 }
-
+/* 웹페이지 폭이 좁아지면 사진 아래로 글이 배치되도록 */
 @media(max-width:1020px) {
   #goal {
       display: block;
