@@ -16,7 +16,10 @@ a {
   color:black;
 }
 /* 메인페이지 및 목록 링크 마우스오버 효과 */
-h1,ol a:hover {
+h1 a:hover {
+ opacity: 0.5;
+}
+ol a:hover {
  opacity: 0.5;
 }
 /* 페이지 상단 가로 구분선 */
