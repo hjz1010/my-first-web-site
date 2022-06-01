@@ -10,10 +10,28 @@
 /* 웹페이지 폭이 좁아지면 사진 아래로 글이 배치되도록 */
 @media(max-width:1020px) {
   #goal {
-      display: block;
-    }
-    .top {
-      display: none;
-    }
-
+    display: block; }
+  .top {
+    display: none; }
+}
+/* 제목 한 번 주욱 커지는 효과 */
+.goal-description {
+  display: grid;
+  grid-template-rows: 35px auto;
+}
+.goal-title {
+    /* 제목이 가운데 정렬로 커지면서 끝나고나면 왼쪽정렬처럼 위치하게 */
+  display: inline-block;
+  width: 390px;
+  text-align: center;
+    /* 애니메이션 */
+  animation-name: bigger;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+@keyframes bigger {
+  0%{font-size: 0px;}
+  100%{font-size: 32px;}
 }

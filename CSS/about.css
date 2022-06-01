@@ -11,10 +11,11 @@ ul {
 #about img {
   border-radius: 40%;
 }
+/* MBTI 사슴 아이콘 hover효과 */
 #deer:hover {
   width: 100px;
 }
-/* 가족사진에 마우스오버 시 확대사진으로 서서히 변경되도록 */
+/* 가족사진에 hover하면 확대사진으로 서서히 변경되도록 */
 .baby {
   position: relative;
 }
