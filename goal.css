@@ -1,0 +1,36 @@
+#goal {
+  white-space: nowrap;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+}
+#goal img {
+  border-radius: 40%;
+}
+/* 웹페이지 폭이 좁아지면 사진 아래로 글이 배치되도록 */
+@media(max-width:1020px) {
+  #goal {
+    display: block; }
+  .top {
+    display: none; }
+}
+/* 제목 주욱 커지는 효과 */
+.goal-description {
+  display: grid;
+  grid-template-rows: 35px auto;
+}
+.goal-title {
+  display: inline-block;
+  width: 390px;
+  text-align: center;
+
+  animation-name: bigger;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes bigger {
+  0%{font-size: 0px;}
+  100%{font-size: 32px;}
+}
