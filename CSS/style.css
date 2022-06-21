@@ -49,9 +49,12 @@ h1 {
     display: block;}
   #list {
     width: auto;
-    height: 150px;
+    height: 35px;
     border-right:none;
     border-bottom:1px dotted gray;
     padding:20px 0px 20px 50px; }
+  li {
+    display: inline;
+  }
 
 }
